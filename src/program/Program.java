@@ -13,9 +13,10 @@ public class Program {
     public static void main(String[] args) {
 
         // Declaração das variáveis
-        Connection conn;
-        Statement stmt;
-        ResultSet rs;
+
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
 
         try {
             conn = Db.getConection();
@@ -29,6 +30,11 @@ public class Program {
             }
         }catch (DbException | SQLException e){
             e.printStackTrace();
+        }
+        finally {
+            Db.closeConection();
+            Db.closeStatement(stmt);
+            Db.closeResultSet(rs);
         }
     }
 }
