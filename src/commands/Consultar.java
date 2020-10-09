@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Consulta {
+public class Consultar {
 
     public static void consultarUser(){
 
