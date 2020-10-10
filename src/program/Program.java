@@ -1,7 +1,9 @@
 package program;
 
 import commands.Atualizar;
+import commands.Deletar;
 import commands.Inserir;
+import commands.Transferir;
 
 public class Program {
 
@@ -9,6 +11,7 @@ public class Program {
         //Consulta.consultarUser();
         //Inserir.inserirUsuarios();
         //Atualizar.atualizarUser();
-
+        //Deletar.deletarUser();
+        Transferir.transferir();
     }
 }
